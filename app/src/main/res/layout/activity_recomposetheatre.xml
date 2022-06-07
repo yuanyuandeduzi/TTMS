@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Theatre.RecomposeTheatreActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/recompose_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/setTheatre_tv_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="演出厅"
+            android:textColor="@color/bt_color"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.example.ttms.customizedView.SeatTable
+        android:id="@+id/seatTable"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recompose_toolbar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-49dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp">
+
+
+            <Button
+                android:id="@+id/setTheatre_bt_uselessSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:text="删除"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/setTheatre_bt_isSoldSeat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_edt_seat_column" />
+
+            <Button
+                android:id="@+id/setTheatre_bt_isSoldSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已售"
+                android:enabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/setTheatre_bt_uselessSeat"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_bt_uselessSeat" />
+
+            <Button
+                android:id="@+id/setTheatre_bt_addRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="添加"
+                android:enabled="false"
+                app:layout_constraintStart_toEndOf="@+id/setTheatre_edt_addRow"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_edt_addRow" />
+
+            <Button
+                android:id="@+id/setTheatre_bt_delRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="删除"
+                android:enabled="false"
+                app:layout_constraintStart_toEndOf="@+id/setTheatre_edt_delRow"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_edt_delRow" />
+
+            <Button
+                android:id="@+id/setTheatre_bt_delColumn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:enabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/setTheatre_bt_delRow"
+                app:layout_constraintStart_toStartOf="@+id/setTheatre_bt_delRow"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_bt_delRow" />
+
+            <EditText
+                android:id="@+id/setTheatre_edt_addRow"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:hint="row"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/setTheatre_edt_addColumn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="column"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintEnd_toEndOf="@+id/setTheatre_edt_addRow"
+                app:layout_constraintStart_toStartOf="@+id/setTheatre_edt_addRow"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_edt_addRow" />
+
+
+            <EditText
+                android:id="@+id/setTheatre_edt_delRow"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="row"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintStart_toStartOf="@+id/setTheatre_edt_addColumn"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_edt_addColumn" />
+
+            <EditText
+                android:id="@+id/setTheatre_edt_delColumn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="column"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintStart_toStartOf="@+id/setTheatre_edt_delRow"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_edt_delRow" />
+
+            <EditText
+                android:id="@+id/setTheatre_edt_inputName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="名称"
+                android:maxLength="11"
+                app:layout_constraintStart_toStartOf="@+id/setTheatre_edt_delColumn"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_edt_delColumn"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/setTheatre_edt_seat_row"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="row"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintStart_toStartOf="@+id/setTheatre_edt_inputName"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_edt_inputName" />
+
+            <EditText
+                android:id="@+id/setTheatre_edt_seat_column"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="column"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintEnd_toEndOf="@+id/setTheatre_edt_seat_row"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/setTheatre_edt_seat_row"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_edt_seat_row" />
+
+            <Button
+                android:id="@+id/setTheatre_bt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="修改"
+                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="@+id/setTheatre_edt_inputName"
+                app:layout_constraintStart_toEndOf="@+id/setTheatre_edt_inputName"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_edt_inputName" />
+
+            <Button
+                android:id="@+id/setTheatre_bt_addColumn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加"
+                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="@+id/setTheatre_edt_addColumn"
+                app:layout_constraintEnd_toEndOf="@+id/setTheatre_bt_addRow"
+                app:layout_constraintStart_toStartOf="@+id/setTheatre_bt_addRow"
+                app:layout_constraintTop_toBottomOf="@+id/setTheatre_bt_addRow" />
+
+            <Button
+                android:id="@+id/setTheatre_bt_addSeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="添加"
+                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="@+id/setTheatre_edt_seat_column"
+                app:layout_constraintStart_toEndOf="@+id/setTheatre_edt_seat_row"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_edt_seat_row" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="添加行列:"
+                app:layout_constraintEnd_toStartOf="@+id/setTheatre_edt_addRow"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_edt_addRow" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="删除行列:"
+                app:layout_constraintEnd_toStartOf="@+id/setTheatre_edt_delRow"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_edt_delRow" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="修改名称:"
+                app:layout_constraintEnd_toStartOf="@+id/setTheatre_edt_inputName"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_edt_inputName" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="添加座位:"
+                app:layout_constraintEnd_toStartOf="@+id/setTheatre_edt_seat_row"
+                app:layout_constraintTop_toTopOf="@+id/setTheatre_edt_seat_row" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
