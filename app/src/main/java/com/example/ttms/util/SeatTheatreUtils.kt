@@ -11,12 +11,13 @@ object SeatTheatreUtils {
     fun setFirstId(id: Int) {
         firstId = id
     }
-
+    //根据id从map中找值
     fun getSeatByRC(map: Map<Int, SeatData>, row: Int, col: Int, theatre: TheatreData): SeatData {
         val id = firstId + (row - 1) * theatre.col + col - 1
         return map[id] ?: SeatData()
     }
 
+    //根据id，list转map
     fun listToMap(list: List<SeatData>): Map<Int, SeatData> {
         val map = mutableMapOf<Int, SeatData>()
         for (seatData in list) {

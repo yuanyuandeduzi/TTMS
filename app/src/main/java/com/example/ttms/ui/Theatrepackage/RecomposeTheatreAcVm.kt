@@ -1,8 +1,7 @@
-package com.example.ttms.ui.Theatre
+package com.example.ttms.ui.Theatrepackage
 
 import android.content.Intent
 import android.util.Log
-import androidx.core.graphics.rotationMatrix
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -16,7 +15,7 @@ import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody
 
-class RecomposeTheatreAcVm() : ViewModel() {
+class RecomposeTheatreAcVm : ViewModel() {
 
     //剧院对象
     private val _theatre by lazy {

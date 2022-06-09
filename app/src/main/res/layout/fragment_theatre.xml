@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/theatre_fragment_toolbar"
+        android:id="@+id/plan_message_ac_bt"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/toolbar_color"
@@ -39,6 +39,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/theatre_fragment_toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/plan_message_ac_bt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

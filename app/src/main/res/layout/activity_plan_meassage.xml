@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.addplan.PlanMessageActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/plan_fragment_toolbar"
+        android:id="@+id/plan_message_ac_bt"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/toolbar_color"
@@ -16,21 +17,30 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/play_tv_toolbar"
+            android:id="@+id/theatre_tv_toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="演出计划"
             android:textColor="@color/bt_color"
             android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/theatre_imBt_toolbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/theatre_add" />
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/plan_fragment_rc"
+        android:id="@+id/plan_message_ac_rc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plan_fragment_toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/plan_message_ac_bt" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

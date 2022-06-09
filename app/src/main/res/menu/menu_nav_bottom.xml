@@ -14,10 +14,10 @@
         android:id="@+id/tab_3"
         android:icon="@drawable/bottom_nav_3"
         android:title="计划"/>
-    <item
+   <!-- <item
         android:id="@+id/tab_4"
         android:icon="@drawable/bottom_nav_4"
-        android:title="我的"/>
+        android:title="我的"/>-->
 
 
 </menu>

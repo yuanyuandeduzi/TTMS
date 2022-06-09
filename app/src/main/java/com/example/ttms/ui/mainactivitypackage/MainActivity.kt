@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.tab_1 -> replaceFragment(TheatreFragment())
                 R.id.tab_2 -> replaceFragment(PlayFragment())
                 R.id.tab_3 -> replaceFragment(PlanFragment())
-                R.id.tab_4 -> replaceFragment(MineFragment())
+                //R.id.tab_4 -> replaceFragment(MineFragment())
             }
             true
         }

@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.addplan.AddPlanSelectTheatreActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/plan_fragment_toolbar"
+        android:id="@+id/plan_message_ac_bt"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/toolbar_color"
@@ -16,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/play_tv_toolbar"
+            android:id="@+id/theatre_tv_toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -26,11 +27,12 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/plan_fragment_rc"
+        android:id="@+id/add_plan_ac_select_theatre_rc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plan_fragment_toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/plan_message_ac_bt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

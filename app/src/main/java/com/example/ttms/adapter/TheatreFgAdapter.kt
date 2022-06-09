@@ -11,7 +11,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ttms.R
 import com.example.ttms.fragment.TheatreFgVM
-import com.example.ttms.ui.Theatre.RecomposeTheatreActivity
+import com.example.ttms.ui.Theatrepackage.RecomposeTheatreActivity
 
 class TheatreFgAdapter(
     private val viewModel: TheatreFgVM,

@@ -1,7 +1,6 @@
-package com.example.ttms.ui.Theatre
+package com.example.ttms.ui.Theatrepackage
 
 import android.util.Log
-import androidx.core.widget.ListViewAutoScrollHelper
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

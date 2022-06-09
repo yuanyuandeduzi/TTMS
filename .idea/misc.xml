@@ -5,18 +5,29 @@
       <map>
         <entry key="..\:/Android_file/TTMS/app/src/main/res/drawable/bt_bg.xml" value="0.1895" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/drawable/item_bg.xml" value="0.198" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/drawable/item_bg_2.xml" value="0.198" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/drawable/write1_shape_1.xml" value="0.198" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/drawable/write2_shape_1.xml" value="0.1895" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/drawable/write3_shape_1.xml" value="0.198" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.29386503067484665" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout-w936dp/activity_login.xml" value="0.187109375" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/Mine_fragment.xml" value="0.2100877192982456" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_add_plan.xml" value="0.19780701754385965" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_add_plan_message.xml" value="0.2100877192982456" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_add_plan_select_theatre.xml" value="0.2100877192982456" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_add_theatre.xml" value="0.2100877192982456" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_plan_meassage.xml" value="0.19780701754385965" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_play.xml" value="0.2" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/activity_recomposetheatre.xml" value="0.264" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/fragment_add_theatre.xml" value="0.2100877192982456" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/fragment_mine.xml" value="0.3008658008658009" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/fragment_plan.xml" value="0.2100877192982456" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/fragment_play.xml" value="0.2100877192982456" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/fragment_theatre.xml" value="0.264" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/item_rc_plan.xml" value="0.4" />
+        <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/item_rc_play.xml" value="0.536" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/item_rc_theatre.xml" value="0.264" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/mine_fragment.xml" value="0.21973684210526315" />
         <entry key="..\:/Android_file/TTMS/app/src/main/res/layout/plan_fragment.xml" value="0.21973684210526315" />

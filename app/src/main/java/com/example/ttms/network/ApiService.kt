@@ -1,7 +1,6 @@
 package com.example.logintest.network
 
-import com.example.ttms.bean.SeatData
-import com.example.ttms.bean.TheatreData
+import com.example.ttms.bean.*
 import okhttp3.RequestBody
 import retrofit2.http.*
 
@@ -29,4 +28,12 @@ interface ApiService {
     @POST("studio/seat/modified")
     suspend fun alterSeatBySeatPostCall(@Body body: RequestBody) : BaseResponse<Boolean>
 
+    @GET("movie/getList")
+    suspend fun getPlayMessageGetCall(@QueryMap content : Map<String,String>) : BaseResponse<PlayData>
+
+    @GET("schedule/allQuery")
+    suspend fun getPlanMessageGetCall(@QueryMap content : Map<String,String>) : BaseResponse<PlanMagData>
+
+    @POST("schedule/add")
+    suspend fun uploadPlanPostCall(@Body body: RequestBody) : BaseResponse<Boolean>
 }

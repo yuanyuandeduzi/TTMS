@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Theatrepackage.AddTheatreActivity">
-
+    tools:context=".ui.addplan.AddPlanMessageActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/plan_message_ac_bt"
+        android:id="@+id/plan_message_ac_toolbar"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/toolbar_color"
@@ -22,20 +21,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="剧院管理"
+            android:text="添加演出"
             android:textColor="@color/bt_color"
             android:textSize="18sp" />
-
     </androidx.appcompat.widget.Toolbar>
 
+
     <EditText
-        android:id="@+id/add_theatre_ed_addTheatreName"
+        android:id="@+id/add_planMessage_ed_ticket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="10"
-        android:hint="剧院名称"
-        android:maxLength="11"
+        android:hint="票价"
+        android:maxLength="5"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4"
@@ -47,17 +47,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="128dp"
-        android:text="名称："
+        android:text="票价："
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plan_message_ac_bt" />
+        app:layout_constraintTop_toBottomOf="@+id/plan_message_ac_toolbar" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="行："
+        android:text="开始："
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -67,41 +67,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="列："
+        android:text="时长："
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <EditText
-        android:id="@+id/add_theatre_ed_addTheatreRow"
+        android:id="@+id/add_planMessage_ed_startTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="10"
-        android:hint="row"
-        android:inputType="number"
-        android:maxLength="2"
+        android:hint="2020/12/22/16:00"
+        android:inputType="datetime"
+        android:maxLength="16"
         app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/textView8"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/add_theatre_ed_addTheatreCol"
+        android:id="@+id/add_planMessage_ed_sumTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="10"
-        android:hint="column"
+        android:hint="min"
         android:inputType="number"
-        android:maxLength="2"
+        android:maxLength="3"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="@+id/textView9"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/add_theatre_bt_finish"
+        android:id="@+id/add_planMessage_bt_finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -110,6 +110,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_theatre_ed_addTheatreCol" />
+        app:layout_constraintTop_toBottomOf="@+id/add_planMessage_ed_sumTime" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

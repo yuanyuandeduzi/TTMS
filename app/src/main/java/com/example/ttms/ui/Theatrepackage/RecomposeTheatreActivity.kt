@@ -1,9 +1,8 @@
-package com.example.ttms.ui.Theatre
+package com.example.ttms.ui.Theatrepackage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import com.example.ttms.bean.SeatData
 import com.example.ttms.bean.TheatreData
@@ -11,7 +10,6 @@ import com.example.ttms.customizedView.SeatTable
 import com.example.ttms.databinding.ActivityRecomposetheatreBinding
 import com.example.ttms.ui.loginpackage.ui.login.afterTextChanged
 import com.example.ttms.util.SeatTheatreUtils
-import com.example.ttms.util.ToastUtils
 
 class RecomposeTheatreActivity : AppCompatActivity() {
 

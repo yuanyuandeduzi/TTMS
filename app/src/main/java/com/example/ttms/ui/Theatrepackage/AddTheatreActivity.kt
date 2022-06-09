@@ -1,4 +1,4 @@
-package com.example.ttms.ui.Theatre
+package com.example.ttms.ui.Theatrepackage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,9 +21,9 @@ class AddTheatreActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        val name = binding.addTheatreEdName
-        val row = binding.addTheatreEdRow
-        val column = binding.addTheatreEdColumn
+        val name = binding.addTheatreEdAddTheatreName
+        val row = binding.addTheatreEdAddTheatreRow
+        val column = binding.addTheatreEdAddTheatreCol
         val finish = binding.addTheatreBtFinish
 
         name.afterTextChanged {

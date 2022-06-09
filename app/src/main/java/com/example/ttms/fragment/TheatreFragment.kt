@@ -3,21 +3,15 @@ package com.example.ttms.fragment
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.get
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.ttms.R
 import com.example.ttms.adapter.TheatreFgAdapter
-import com.example.ttms.bean.TheatreData
 import com.example.ttms.databinding.FragmentTheatreBinding
-import com.example.ttms.ui.Theatre.AddTheatreActivity
+import com.example.ttms.ui.Theatrepackage.AddTheatreActivity
 
 class TheatreFragment : Fragment() {
 
