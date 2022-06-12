@@ -46,6 +46,8 @@ class PlanFragment: Fragment(){
         binding.planFragmentRc.also {
             it.layoutManager = layManger
             it.adapter = planAdapter
+
+
         }
         viewModel.addNextPage()
         viewModel.dataSource.observe(viewLifecycleOwner) {
