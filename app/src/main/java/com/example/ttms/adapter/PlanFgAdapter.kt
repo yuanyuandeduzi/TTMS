@@ -20,7 +20,6 @@ class PlanFgAdapter(
     private var list: MutableList<DataSource>,val context : Context
 ) : RecyclerView.Adapter<PlanFgAdapter.ViewHolder>() {
 
-
     inner class ViewHolder(binding : ItemRcPlayBinding) : RecyclerView.ViewHolder(binding.root) {
         val title: TextView = binding.playTvTitle
         val im: ImageFilterView = binding.playIm1

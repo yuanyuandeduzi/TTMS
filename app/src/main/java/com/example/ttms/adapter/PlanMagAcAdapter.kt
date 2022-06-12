@@ -30,10 +30,11 @@ class PlanMagAcAdapter(val list : List<PlanData>) : RecyclerView.Adapter<PlanMag
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = list[position]
         holder.also {
+            Log.d("TAG", "onBindViewHolder: $it")
             it.title.text = StringUtils.getStringByLength(data.movieName,10)
             it.play.text = StringUtils.getStringByLength(data.studioName,10)
             it.time.text = TimeUtils.msToHour(data.startTime).plus("~").plus(TimeUtils.msToHour(data.endTime))
-            it.ticket.text = data.ticketPrice.toString().plus("元")
+            it.ticket.text = data.ticketPrice.plus("元")
             it.date.text = TimeUtils.msToDay(data.startTime)
         }
     }

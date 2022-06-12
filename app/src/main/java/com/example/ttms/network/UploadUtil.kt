@@ -9,8 +9,11 @@ import retrofit2.create
 
 object UploadUtil {
     private val baseUrl = "http://101.201.78.192:9999/ttms/"
-    private var token: String =
-        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJSb2xlIjozLCJpc3MiOiJhdXRoMCIsImlkIjoxLCJleHAiOjE2NTUwNDU0OTR9.-Z7BP5bpIvwp29LC-Q02TrKTbd0IDYjCPHB4CDVymBI1654354294611647187"
+    //private var token: String =
+    //    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJSb2xlIjozLCJpc3MiOiJhdXRoMCIsImlkIjoxLCJleHAiOjE2NTUwNDU0OTR9.-Z7BP5bpIvwp29LC-Q02TrKTbd0IDYjCPHB4CDVymBI1654354294611647187"
+
+    private var token: String = ""
+
 
     private val okHttpClient = OkHttpClient.Builder().addInterceptor { chain ->
         val request = chain.request()

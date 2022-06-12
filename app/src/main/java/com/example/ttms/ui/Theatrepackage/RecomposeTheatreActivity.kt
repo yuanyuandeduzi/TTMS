@@ -145,6 +145,8 @@ class RecomposeTheatreActivity : AppCompatActivity() {
                 btIsSold.isEnabled = true
             }
         }
+
+        //删除修改状态为2
         btDelSeat.setOnClickListener {
             btDelSeat.isEnabled = false
             btIsSold.isEnabled = false
@@ -154,6 +156,8 @@ class RecomposeTheatreActivity : AppCompatActivity() {
             seatTable.restart()
         }
 
+
+        //已售，修改座位状态为0
         btIsSold.setOnClickListener {
             btIsSold.isEnabled = false
             btDelSeat.isEnabled = false

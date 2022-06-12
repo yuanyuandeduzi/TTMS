@@ -1,16 +1,18 @@
 package com.example.ttms.util
 
-import android.util.Log
-import okhttp3.HttpUrl.Companion.toHttpUrl
 
 object StringUtils {
 
     //长字符转...结尾
-    fun getStringByLength(content: String, length: Int): String {
-        return if (content.length > length) {
-            content.substring(0, length) + "..."
-        } else {
-            content
+    fun getStringByLength(content: String?, length: Int): String {
+        return if (content != null) {
+            if (content.length > length) {
+                content.substring(0, length) + "..."
+            } else {
+                content
+            }
+        }else {
+            "默认值"
         }
     }
 
@@ -30,8 +32,8 @@ object StringUtils {
             num = list.size - 1
         }
         var result = " "
-        for (i in 0 until num) {
-            result = result.plus("${list[i]}\n ")
+        for (j in 0 until num) {
+            result = result.plus("${list[j]}\n ")
         }
         return result.plus(list[num])
     }

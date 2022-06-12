@@ -7,19 +7,19 @@ data class PlanData(
     @SerializedName("endTime")
     var endTime: String,
     @SerializedName("movieId")
-    var movieId: Int,
+    var movieId: String,
     @SerializedName("movieName")
     var movieName: String,
     @SerializedName("scheduleId")
-    var scheduleId: Int,
+    var scheduleId: String,
     @SerializedName("startTime")
     var startTime: String,
     @SerializedName("status")
-    var status: Int,
+    var status: String,
     @SerializedName("studioId")
-    var studioId: Int,
+    var studioId: String,
     @SerializedName("studioName")
     var studioName: String,
     @SerializedName("ticketPrice")
-    var ticketPrice: Int
+    var ticketPrice: String
 )
