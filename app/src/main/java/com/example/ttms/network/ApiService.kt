@@ -9,7 +9,6 @@ interface ApiService {
     @POST("staff/login")
     suspend fun loginPostCall(@Body body: RequestBody): BaseResponse<String>
 
-
     @GET("studio/query-seats")
     suspend fun getSeatsGetCall(@Query("studioId") id: String): BaseResponse<List<SeatData>>
 

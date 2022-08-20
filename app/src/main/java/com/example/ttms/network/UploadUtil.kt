@@ -28,7 +28,6 @@ object UploadUtil {
     private val okHttpClickService = OkHttpClient.Builder().addInterceptor(Interceptor {
         val proceed = it.proceed(it.request())
         token = proceed.header("token", " ").toString()
-        Log.d("TAG", ": $token")
         proceed
     }).build()
 
